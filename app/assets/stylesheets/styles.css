@@ -1,0 +1,132 @@
+ul, li, h1, h2, h3, h4, h5, h6{ padding:0; margin:0}
+h2{ 
+    font-family:'Oswald';
+    text-transform:uppercase; 
+    border-bottom:2px solid #ccc; 
+    letter-spacing:1px; 
+    padding-bottom:5px; 
+    margin-bottom:5px;
+    color:#C64564
+}
+@font-face{
+    font-family:'Oswald';
+    src: url('../font/Oswald-Regular.otf');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face{
+    font-family:'OpenSans';
+    src: url('../font/OpenSans-Regular.ttf');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face{
+    font-family:'Rockwell';
+    src: url('../font/rock.ttf');
+    font-style:normal;
+    font-weight:normal;
+}
+.green{background:#A4C26D}
+.green:hover{background:#588407}
+.floatR{ float:right}
+.floatL{ float:left}
+.clear{ clear:both}
+body{
+    background:#FDF7F4 url('../images/top.png') repeat-x fixed;
+    color:#696969;
+    padding:0;
+    margin:0;
+    font-family:'OpenSans';
+    font-size:12px;
+    z-index:99999
+}
+
+.logo{
+    font-family: 'Oswald';
+    font-size: 35px;
+    padding:20px 0 0 0;
+}
+.container{
+    padding: 40px 0 0 0;
+}
+.top{ padding:0 50px;}
+nav.nav {
+    font-family: 'Rockwell';
+    font-size: 1em;
+    width: 80%;
+    margin: 10px 0 0 0;
+    padding: 12px 0;
+    border-top: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+    text-transform: uppercase;
+}
+nav.nav ul {OpenSans-Regular
+    margin: 0 auto;
+    text-align: center;
+}
+nav.nav ul li {
+    float: right;
+    text-align: left;
+    list-style:none;
+    padding-left:154px;
+    font-size: 15px;
+}
+nav.nav ul li img {
+    vertical-align:middle;
+    height:24px;
+    width:24px;
+    padding:10px 10px;
+    border-radius:22px;
+    margin-right:10px;
+}
+nav.nav ul li:first-child{
+    margin-right:50px;
+}
+nav.nav ul li:last-child{
+    padding:0;
+}
+nav.nav ul li a {
+    text-decoration: none;
+    color: #696969 ;
+    display:block;
+}
+nav.nav ul li a:hover{
+    color:3b3b3b;
+}
+nav.nav ul li a.signin img{ background:#A4C26D}
+nav.nav ul li a.forum img{ background:#C64564}
+nav.nav ul li a.about img{ background:#2F8593}
+nav.nav ul li a.home img{ background:#F47722}
+
+nav.nav ul li a:hover > img{
+    background:#ccc
+}   
+    
+.mid{
+    padding:40px 0;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom:40px;
+}
+.hotlines{ width:33%; min-height:450px; background:#f2f2f2; }
+.hotlines .inner ul li,.talk_with_experts ul li{list-style:none; border-bottom:1px dotted #ccc; font-size:15px; background:url('../images/tic.png') no-repeat -1px 10px; padding:10px 10px 5px 40px; }
+.hotlines .inner ul li span, .talk_with_experts ul li span{ display:inline-block; margin-left:0px;}
+.hotlines .inner ul li span.deg, .talk_with_experts ul li span.deg{ font-style:italic; font-size:12px;}
+.hotlines .inner ul li span.num, .talk_with_experts ul li span.num{ text-align:right; font-size:12px;}
+.hotlines .inner ul li:hover, .talk_with_experts ul li:hover{ background-color:#ccc; cursor:pointer}
+.hotlines .inner, .talk_with_experts{ padding:20px;}
+
+.map{ border:5px solid #f2f2f2}
+.button{
+    border:0;
+    padding:8px 25px;
+    color:#fff;
+    font-size:14px;
+    font-family:'Rockwell';
+    border-radius:5px;
+    cursor:pointer
+}
+
+
+.bottom{ background:#1AB1BB; padding:20px 40px}
+.talk_with_experts{ width:30%; min-height:200px; background:#f2f2f2; }
+.bottom .rat h2{ color:#fff; font-size:20px; display:block}
