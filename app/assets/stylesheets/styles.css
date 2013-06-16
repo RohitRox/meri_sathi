@@ -32,7 +32,7 @@ h2{
 .floatL{ float:left}
 .clear{ clear:both}
 body{
-    background:#FDF7F4 url('../images/top.png') repeat-x fixed;
+    background:#FDF7F4 url('../images/top.png') repeat-x top;
     color:#696969;
     padding:0;
     margin:0;
@@ -112,7 +112,7 @@ nav.nav ul li a:hover > img{
 .hotlines .inner ul li span, .talk_with_experts ul li span{ display:inline-block; margin-left:0px;}
 .hotlines .inner ul li span.deg, .talk_with_experts ul li span.deg{ font-style:italic; font-size:12px;}
 .hotlines .inner ul li span.num, .talk_with_experts ul li span.num{ text-align:right; font-size:12px;}
-.hotlines .inner ul li:hover, .talk_with_experts ul li:hover{ background-color:#ccc; cursor:pointer}
+.hotlines .inner ul li:hover, .talk_with_experts ul li:hover{ background-color:#ddd; cursor:pointer}
 .hotlines .inner, .talk_with_experts{ padding:20px;}
 
 .map{ border:5px solid #f2f2f2}
@@ -127,6 +127,31 @@ nav.nav ul li a:hover > img{
 }
 
 
-.bottom{ background:#1AB1BB; padding:20px 40px}
+.bottom{ background:#1AB1BB; padding:40px 40px}
 .talk_with_experts{ width:30%; min-height:200px; background:#f2f2f2; }
-.bottom .rat h2{ color:#fff; font-size:20px; display:block}
+.bottom .rat{ width:65%; color:#fff}
+.bottom .rat h2{color:#fff; font-size:25px; display:block; text-transform:none}
+.bottom .rat ul{ padding:40px 0}
+.bottom .rat ul li, .hotlines .inner ul.needhelp li{ list-style:none; float:left; text-align:center; margin-right:60px; background:none}
+.hotlines .inner ul.needhelp{ margin-top:20px;}
+.hotlines .inner ul.needhelp li{ margin-right:50px; padding:10px}
+.hotlines .inner ul.needhelp li:hover{ background:#ddd}
+.hotlines .inner ul.needhelp li.last{margin-right:0;}
+.bottom .rat ul li strong, .hotlines .inner ul.needhelp li strong{ font-size:16px; color:#232323}
+.bottom .rat ul li:last-child{ margin-right:0}
+
+
+.stories{ background:#f2f2f2; padding:40px;}
+.stories h2{ border-bottom:2px solid #ccc; font-size:25px}
+.stories .panel{ padding:20px 0; font-size:14px; line-height:25px; border-bottom:1px dashed #ccc}
+.stories .panel h3{ font-family:'Rockwell'; font-size:18px; color:#232323; font-weight:normal; text-transform:uppercase}
+.stories .panel p{ padding:0; margin:0}
+.stories .panel h3 span{ font-size:16px; color:#b3b3b1; display:inline-block; margin-left:10px; text-transform:none; padding-bottom:7px;}
+
+footer{
+    display:block; 
+    background:#696969; 
+    color:#fff; 
+    text-align:center; 
+    padding:20px 0
+}
