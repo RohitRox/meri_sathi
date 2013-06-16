@@ -4,7 +4,6 @@ class Incident
   include Geocoder::Model::Mongoid
 
   field :title, type: String
-  field :story, type: String
   field :date, type: Time
   field :victims, type: Integer
   field :address, type: String

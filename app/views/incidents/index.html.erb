@@ -3,23 +3,19 @@
 <table>
   <tr>
     <th>Title</th>
-    <th>Story</th>
     <th>Date</th>
-    <th>Latt</th>
-    <th>Long</th>
+    <th>Address</th>
+    <th>Coordinates</th>
     <th>Victims</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th colspan="3">Actions</th>
   </tr>
 
 <% @incidents.each do |incident| %>
   <tr>
     <td><%= incident.title %></td>
-    <td><%= incident.story %></td>
     <td><%= incident.date %></td>
-    <td><%= incident.latt %></td>
-    <td><%= incident.long %></td>
+    <td><%= incident.address %></td>
+    <td><%= incident.coordinates %></td>
     <td><%= incident.victims %></td>
     <td><%= link_to 'Show', incident %></td>
     <td><%= link_to 'Edit', edit_incident_path(incident) %></td>
