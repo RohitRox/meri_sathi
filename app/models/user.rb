@@ -10,7 +10,7 @@ class User
   ## Database authenticatable
   field :email,              :type => String, :default => ""
   field :encrypted_password, :type => String, :default => ""
-  
+
   ## Recoverable
   field :reset_password_token,   :type => String
   field :reset_password_sent_at, :type => Time
@@ -24,6 +24,11 @@ class User
   field :last_sign_in_at,    :type => Time
   field :current_sign_in_ip, :type => String
   field :last_sign_in_ip,    :type => String
+
+  field :expert, :type => Boolean, :default => false
+  field :chat, :type => Boolean, :default => false
+
+  field :profile, :type => :text
 
   ## Confirmable
   # field :confirmation_token,   :type => String
