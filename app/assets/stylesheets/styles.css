@@ -51,8 +51,7 @@ body{
 }
 .top{ padding:0 50px;}
 nav.nav {
-    font-family: 'Rockwell';
-    font-size: 1em;
+    font-family: 'Oswald';
     width: 80%;
     margin: 10px 0 0 0;
     padding: 12px 0;
@@ -60,7 +59,7 @@ nav.nav {
     border-bottom: 1px dashed #ccc;
     text-transform: uppercase;
 }
-nav.nav ul {OpenSans-Regular
+nav.nav ul {
     margin: 0 auto;
     text-align: center;
 }
@@ -69,7 +68,7 @@ nav.nav ul li {
     text-align: left;
     list-style:none;
     padding-left:154px;
-    font-size: 15px;
+    font-size: 16px;
 }
 nav.nav ul li img {
     vertical-align:middle;
