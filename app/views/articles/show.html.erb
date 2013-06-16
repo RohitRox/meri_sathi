@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+<%-if !@article.anonymous %>
+  <p>
+    <b>Sathi:</b>
+    <%= @article.user.email %>
+  </p>
+<% end %>
+<p>
+  <b>Title:</b>
+  <%= @article.title %>
+</p>
+
+<p>
+  <b>My story:</b>
+  <%= @article.my_story %>
+</p>
+
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
+
+<% if @article.comments.size > 0 %>
+  <h2>Comments</h2>
+  <% @article.comments.each do |comment| %>
+    <p><%= comment.content %></p>
+  <% end %>
+<% end %>
+
+<h2>New Comment</h2>
+<%= form_for [@article, Comment.new] do |f| %>
+  <p><%= f.text_area :content, :rows => 10 %></p>
+  <p><%= f.submit %></p>
+<% end %>
