@@ -6,6 +6,7 @@
     %meta{:content => "merisathi", :name => "Keywords"}/
     %title Sakhi
     %link{:href => "css/merisathi.css", :rel => "stylesheet", :type => "text/css"}
+    %script{:type=>"text/javascript",:src=>"http://maps.google.com/maps/api/js?sensor=false" }
 %body
   .container
     .top
@@ -83,15 +84,6 @@
     %section.bottom
       .rat.floatL
         %h2 RATs (Rapid Action Team) AROUND YOU
-=======
-%script{:type=>"text/javascript",:src=>"http://maps.google.com/maps/api/js?sensor=false" }
-.container
-  .top
-    %header
-      .logo.floatL
-        Merisathi
-      %nav.nav.floatR
->>>>>>> 9a2754abf55f33baee243bc4329236b346af58b3
         %ul
           %li
             %img{:alt => "", :src => "images/person.png"}/
@@ -165,96 +157,7 @@
       .clear
     %footer
       \&copy; 2013. All Rights Reserved.
-    %section.mid
-      .map.floatL#map_canvas
-        /%img{:alt => "", :src => "/assets/map.jpg", :width => "800"}/
-      .hotlines.floatR
-        .inner
-          %h2 Hotlines
-          %ul
-            %li
-              %strong Sushma Thapa
-              %br/
-              %span.deg - Director of abc
-              %span.num.floatR
-                Contact No.:
-                %strong 1234567889
-            %li
-              %strong Nikita Acharya
-              %br/
-              %span.deg - Director of abc
-              %span.num.floatR
-                Contact No.:
-                %strong 1234567889
-          %br/
-          %button.button.green.floatR View All List
-          %br/
-          %br/
-          %h2 Need Help?
-          %ul
-            %li
-              %strong Sushma Thapa
-              %br/
-              %span.deg - Director of abc
-              %span.num.floatR
-                Contact No.:
-                %strong 1234567889
-            %li
-              %strong Nikita Acharya
-              %br/
-              %span.deg - Director of abc
-              %span.num.floatR
-                Contact No.:
-                %strong 1234567889
-          %br/
-          %button.button.green.floatR View All List
-          %br/
-          %br/
-      .clear
-  %section.bottom
-    .rat.floatL
-      %h2 RATS AROUND YOU
-      %ul
-        %li
-          %strong Sushma Thapa
-          %br/
-          %span.deg - Director of abc
-          %span.num.floatR
-            Contact No.:
-            %strong 1234567889
-        %li
-          %strong Nikita Acharya
-          %br/
-          %span.deg - Director of abc
-          %span.num.floatR
-            Contact No.:
-            %strong 1234567889
-      %br/
-      %button.button.green.floatR View All List
-      %br/
-      %br/
-    .talk_with_experts.floatR
-      %h2 Chat with Experts
-      %ul
-        %li
-          %strong Sushma Thapa
-          %br/
-          %span.deg - Director of abc
-          %span.num.floatR
-            Contact No.:
-            %strong 1234567889
-        %li
-          %strong Nikita Acharya
-          %br/
-          %span.deg - Director of abc
-          %span.num.floatR
-            Contact No.:
-            %strong 1234567889
-      %br/
-      %button.button.green.floatR View All List
-      %br/
-      %br/
-    .clear
+    
 :javascript
   $('#map_canvas').gmap().bind('init', function() {
   // This URL won't work on your localhost, so you need to change it
@@ -271,4 +174,3 @@
     });
   });
   });
->>>>>>> 9a2754abf55f33baee243bc4329236b346af58b3
