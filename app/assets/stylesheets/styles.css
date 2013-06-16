@@ -4,8 +4,7 @@ h2{
     text-transform:uppercase; 
     border-bottom:2px solid #ccc; 
     letter-spacing:1px; 
-    padding-bottom:5px; 
-    margin-bottom:5px;
+    padding-bottom:5px;
     color:#C64564
 }
 @font-face{
@@ -140,9 +139,10 @@ nav.nav ul li a:hover > img{
 .bottom .rat ul li:last-child{ margin-right:0}
 
 
-.stories{ background:#f2f2f2; padding:40px;}
+.stories{ background:#f2f2f2; padding:40px 0 40px 40px;}
 .stories h2{ border-bottom:2px solid #ccc; font-size:25px}
-.stories .panel{ padding:20px 0; font-size:14px; line-height:25px; border-bottom:1px dashed #ccc}
+.stories .panel{ padding:20px 0; font-size:14px; line-height:25px; border-bottom:1px dashed #ccc;float:left; width:45%; padding-right:65px; text-align:justify}
+.stories .panel:last-child{ padding-right:0}
 .stories .panel h3{ font-family:'Rockwell'; font-size:18px; color:#232323; font-weight:normal; text-transform:uppercase}
 .stories .panel p{ padding:0; margin:0}
 .stories .panel h3 span{ font-size:16px; color:#b3b3b1; display:inline-block; margin-left:10px; text-transform:none; padding-bottom:7px;}
@@ -154,3 +154,6 @@ footer{
     text-align:center; 
     padding:20px 0
 }
+.stories.forum{ background-color:#FDF7F4; width:700px; margin:0 auto; text-align:justify}
+
+
