@@ -1,3 +1,4 @@
+<div></div>
 <p id="notice"><%= notice %></p>
 <%-if !@article.anonymous %>
   <p>
@@ -5,10 +6,10 @@
     <%= @article.user.email %>
   </p>
 <% end %>
-<p>
+<h1>
   <b>Title:</b>
   <%= @article.title %>
-</p>
+</h1>
 
 <p>
   <b>My story:</b>
