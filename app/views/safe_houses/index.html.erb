@@ -1,0 +1,31 @@
+<h1>Listing safe_houses</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Contact name</th>
+    <th>Contact no</th>
+    <th>Coordinates</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @safe_houses.each do |safe_house| %>
+  <tr>
+    <td><%= safe_house.name %></td>
+    <td><%= safe_house.address %></td>
+    <td><%= safe_house.contact_name %></td>
+    <td><%= safe_house.contact_no %></td>
+    <td><%= safe_house.coordinates %></td>
+    <td><%= link_to 'Show', safe_house %></td>
+    <td><%= link_to 'Edit', edit_safe_house_path(safe_house) %></td>
+    <td><%= link_to 'Destroy', safe_house, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Safe house', new_safe_house_path %>

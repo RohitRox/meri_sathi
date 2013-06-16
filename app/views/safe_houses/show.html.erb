@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @safe_house.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @safe_house.address %>
+</p>
+
+<p>
+  <b>Contact name:</b>
+  <%= @safe_house.contact_name %>
+</p>
+
+<p>
+  <b>Contact no:</b>
+  <%= @safe_house.contact_no %>
+</p>
+
+<p>
+  <b>Coordinates:</b>
+  <%= @safe_house.coordinates %>
+</p>
+
+
+<%= link_to 'Edit', edit_safe_house_path(@safe_house) %> |
+<%= link_to 'Back', safe_houses_path %>

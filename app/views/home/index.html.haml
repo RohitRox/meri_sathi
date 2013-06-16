@@ -1,163 +1,153 @@
-<!doctype html>
-%head
-  %meta{:charset => "utf-8"}
-    %meta{:content => "width=device-width", :name => "viewport"}/
-    %meta{:content => "merisathi", :name => "Description"}/
-    %meta{:content => "merisathi", :name => "Keywords"}/
-    %title Sakhi
-    %link{:href => "css/merisathi.css", :rel => "stylesheet", :type => "text/css"}
-    %script{:type=>"text/javascript",:src=>"http://maps.google.com/maps/api/js?sensor=false" }
-%body
-  .container
-    .top
-      %header
-        .logo.floatL
-          Merisathi
-        %nav.nav.floatR
+%script{:type=>"text/javascript",:src=>"http://maps.google.com/maps/api/js?sensor=false" }
+.container
+  .top
+    %header
+      .logo.floatL
+        Merisathi
+      %nav.nav.floatR
+        %ul
+          %li
+            %a.signin{:href => "#"}
+              %img{:src => "/assets/home.png"}/
+              %span.text Sign In
+          %li
+            %a.forum{:href => "#"}
+              %img{:src => "/assets/home.png"}/
+              %span.text Forum
+          %li
+            %a.about{:href => "#"}
+              %img{:src => "/assets/home.png"}/
+              %span.text About Us
+          %li
+            %a.home{:href => "#"}
+              %img{:src => "/assets/home.png"}/
+              %span.text Home
+      .clear
+    %section.mid
+      .map.floatL#map_canvas
+      .hotlines.floatR
+        .inner
+          %h2 Hotlines
           %ul
             %li
-              %a.signin{:href => "#"}
-                %img{:src => "images/home.png"}/
-                %span.text Sign In
+              %strong Sushma Thapa
+              %br/
+              %span.deg - Director of abc
+              %span.num.floatR
+                Contact No.:
+                %strong 1234567889
             %li
-              %a.forum{:href => "#"}
-                %img{:src => "images/home.png"}/
-                %span.text Forum
+              %strong Nikita Acharya
+              %br/
+              %span.deg - Director of abc
+              %span.num.floatR
+                Contact No.:
+                %strong 1234567889
+          %br/
+          %button.button.green.floatR View All List
+          %br/
+          %br/
+          %h2 Need Help?
+          %ul.needhelp
             %li
-              %a.about{:href => "#"}
-                %img{:src => "images/home.png"}/
-                %span.text About Us
-            %li
-              %a.home{:href => "#"}
-                %img{:src => "images/home.png"}/
-                %span.text Home
-        .clear
-      %section.mid
-        .map.floatL
-          %img{:alt => "", :height => "470", :src => "images/map.jpg", :width => "800"}/
-        .hotlines.floatR
-          .inner
-            %h2 Hotlines
-            %ul
-              %li
-                %strong Sushma Thapa
-                %br/
-                %span.deg - Director of abc
-                %span.num.floatR
-                  Contact No.:
-                  %strong 1234567889
-              %li
-                %strong Nikita Acharya
-                %br/
-                %span.deg - Director of abc
-                %span.num.floatR
-                  Contact No.:
-                  %strong 1234567889
-            %br/
-            %button.button.green.floatR View All List
-            %br/
-            %br/
-            %h2 Need Help?
-            %ul.needhelp
-              %li
-                %img{:alt => "", :src => "images/person.png"}/
-                %br/
-                %strong Sushma Thapa
-                %br/
-                %span.deg (Director of abc)
-                %br/
-                %span.num.floatR Contact No.: 1234567889
-              %li.last
-                %img{:alt => "", :src => "images/person.png"}/
-                %br/
-                %strong Sushma Thapa
-                %br/
-                %span.deg (Director of abc)
-                %br/
-                %span.num.floatR Contact No.: 1234567889
-              .clear
-            %br/
-            %button.button.green.floatR View All List
-            %br/
-            %br/
-        .clear
-    %section.bottom
-      .rat.floatL
-        %h2 RATs (Rapid Action Team) AROUND YOU
-        %ul
-          %li
-            %img{:alt => "", :src => "images/person.png"}/
-            %br/
-            %strong Sushma Thapa
-            %br/
-            %span.deg (Director of abc)
-            %br/
-            %span.num.floatR Contact No.: 1234567889
-          %li
-            %img{:alt => "", :src => "images/person.png"}/
-            %br/
-            %strong Sushma Thapa
-            %br/
-            %span.deg (Director of abc)
-            %br/
-            %span.num.floatR Contact No.:1234567889
-          %li
-            %img{:alt => "", :src => "images/person.png"}/
-            %br/
-            %strong Sushma Thapa
-            %br/
-            %span.deg (Director of abc)
-            %br/
-            %span.num.floatR Contact No.: 1234567889
-          %li
-            %img{:alt => "", :src => "images/person.png"}/
-            %br/
-            %strong Sushma Thapa
-            %br/
-            %span.deg (Director of abc)
-            %br/
-            %span.num.floatR Contact No.: 1234567889
-        %br/
-      .talk_with_experts.floatR
-        %h2 Chat with Experts
-        %ul
-          %li
-            %strong Sushma Thapa
-            %br/
-            %span.deg - Director of abc
-            %span.num.floatR
-              Contact No.:
-              %strong 1234567889
-          %li
-            %strong Nikita Acharya
-            %br/
-            %span.deg - Director of abc
-            %span.num.floatR
-              Contact No.:
-              %strong 1234567889
-        %br/
-        %button.button.green.floatR View All List
-        %br/
-        %br/
+              %img{:alt => "", :src => "/assets/person.png"}/
+              %br/
+              %strong Sushma Thapa
+              %br/
+              %span.deg (Director of abc)
+              %br/
+              %span.num.floatR Contact No.: 1234567889
+            %li.last
+              %img{:alt => "", :src => "/assets/person.png"}/
+              %br/
+              %strong Sushma Thapa
+              %br/
+              %span.deg (Director of abc)
+              %br/
+              %span.num.floatR Contact No.: 1234567889
+            .clear
+          %br/
+          %button.button.green.floatR View All List
+          %br/
+          %br/
       .clear
-    %section.stories
-      %h2 Stories
-      .panel
-        %h3
-          Just another day at the office
-          %span - 16th June, 2013
-        %p
-          I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others. But yesterday was a distillation of everything I find energising about the work here. Yesterday reminded me what a privilege it is to be part of the Greenbelt journey.I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others. But yesterday was a distillation of everything I find energising about the work here. Yesterday reminded me what a privilege it is to be part of the Greenbelt journey.I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others.
-      .panel
-        %h3
-          Just another day at the office
-          %span - 16th June, 2013
-        %p
-          I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others. But yesterday was a distillation of everything I find energising about the work here. Yesterday reminded me what a privilege it is to be part of the Greenbelt journey.I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others. But yesterday was a distillation of everything I find energising about the work here. Yesterday reminded me what a privilege it is to be part of the Greenbelt journey.I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others.
-      .clear
-    %footer
-      \&copy; 2013. All Rights Reserved.
-    
+  %section.bottom
+    .rat.floatL
+      %h2 RATs (Rapid Action Team) AROUND YOU
+      %ul
+        %li
+          %img{:alt => "", :src => "/assets/person.png"}/
+          %br/
+          %strong Sushma Thapa
+          %br/
+          %span.deg (Director of abc)
+          %br/
+          %span.num.floatR Contact No.: 1234567889
+        %li
+          %img{:alt => "", :src => "/assets/person.png"}/
+          %br/
+          %strong Sushma Thapa
+          %br/
+          %span.deg (Director of abc)
+          %br/
+          %span.num.floatR Contact No.:1234567889
+        %li
+          %img{:alt => "", :src => "/assets/person.png"}/
+          %br/
+          %strong Sushma Thapa
+          %br/
+          %span.deg (Director of abc)
+          %br/
+          %span.num.floatR Contact No.: 1234567889
+        %li
+          %img{:alt => "", :src => "/assets/person.png"}/
+          %br/
+          %strong Sushma Thapa
+          %br/
+          %span.deg (Director of abc)
+          %br/
+          %span.num.floatR Contact No.: 1234567889
+      %br/
+    .talk_with_experts.floatR
+      %h2 Chat with Experts
+      %ul
+        %li
+          %strong Sushma Thapa
+          %br/
+          %span.deg - Director of abc
+          %span.num.floatR
+            Contact No.:
+            %strong 1234567889
+        %li
+          %strong Nikita Acharya
+          %br/
+          %span.deg - Director of abc
+          %span.num.floatR
+            Contact No.:
+            %strong 1234567889
+      %br/
+      %button.button.green.floatR View All List
+      %br/
+      %br/
+    .clear
+  %section.stories
+    %h2 Stories
+    .panel
+      %h3
+        Just another day at the office
+        %span - 16th June, 2013
+      %p
+        I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others. But yesterday was a distillation of everything I find energising about the work here. Yesterday reminded me what a privilege it is to be part of the Greenbelt journey.I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others. But yesterday was a distillation of everything I find energising about the work here. Yesterday reminded me what a privilege it is to be part of the Greenbelt journey.I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others.
+    .panel
+      %h3
+        Just another day at the office
+        %span - 16th June, 2013
+      %p
+        I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others. But yesterday was a distillation of everything I find energising about the work here. Yesterday reminded me what a privilege it is to be part of the Greenbelt journey.I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others. But yesterday was a distillation of everything I find energising about the work here. Yesterday reminded me what a privilege it is to be part of the Greenbelt journey.I’ve worked for Greenbelt on and off for the last nine years or so. Like any job, some days are better than others.
+    .clear
+  %footer
+    \&copy; 2013. All Rights Reserved.
+
 :javascript
   $('#map_canvas').gmap().bind('init', function() {
   // This URL won't work on your localhost, so you need to change it
@@ -170,6 +160,18 @@
     'bounds': false
     }).click(function() {
     $('#map_canvas').gmap('openInfoWindow', { 'content': _self.title }, this);
+    });
+    });
+  });
+  $.getJSON( '/api/safe_houses.json', function(data) {
+    $.each( data, function() {
+    var _self = this;
+    $('#map_canvas').gmap('addMarker', {
+    'position': new google.maps.LatLng(_self.coordinates[0], _self.coordinates[1]),
+    'bounds': false,
+    'icon': "http://www.googlemapsmarkers.com/v1/S/0099FF/"
+    }).click(function() {
+    $('#map_canvas').gmap('openInfoWindow', { 'content': _self.name+"<br/>"+_self.contact_name+"<br/>"+_self.contact_no }, this);
     });
     });
   });

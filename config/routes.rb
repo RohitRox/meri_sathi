@@ -11,6 +11,7 @@ MeriSathi::Application.routes.draw do
 
   namespace :api do
     resources :incidents
+    resources :safe_houses
   end
 
   # The priority is based upon order of creation:

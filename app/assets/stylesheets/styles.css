@@ -1,27 +1,27 @@
 ul, li, h1, h2, h3, h4, h5, h6{ padding:0; margin:0}
 h2{
     font-family:'Oswald';
-    text-transform:uppercase; 
-    border-bottom:2px solid #ccc; 
-    letter-spacing:1px; 
+    text-transform:uppercase;
+    border-bottom:2px solid #ccc;
+    letter-spacing:1px;
     padding-bottom:5px;
     color:#C64564
 }
 @font-face{
     font-family:'Oswald';
-    src: url('../font/Oswald-Regular.otf');
+    src: url('/assets/Oswald-Regular.otf');
     font-style:normal;
     font-weight:normal;
 }
 @font-face{
     font-family:'OpenSans';
-    src: url('../font/OpenSans-Regular.ttf');
+    src: url('/assets/OpenSans-Regular.ttf');
     font-style:normal;
     font-weight:normal;
 }
 @font-face{
     font-family:'Rockwell';
-    src: url('../font/rock.ttf');
+    src: url('/assets/rock.ttf');
     font-style:normal;
     font-weight:normal;
 }
@@ -31,7 +31,7 @@ h2{
 .floatL{ float:left}
 .clear{ clear:both}
 body{
-    background:#FDF7F4 url('../images/top.png') repeat-x top;
+    background:#FDF7F4 url('/assets/top.png') repeat-x top;
     color:#696969;
     padding:0;
     margin:0;
@@ -106,7 +106,7 @@ nav.nav ul li a:hover > img{
     margin-bottom:40px;
 }
 .hotlines{ width:33%; min-height:450px; background:#f2f2f2; }
-.hotlines .inner ul li,.talk_with_experts ul li{list-style:none; border-bottom:1px dotted #ccc; font-size:15px; background:url('../images/tic.png') no-repeat -1px 10px; padding:10px 10px 5px 40px; }
+.hotlines .inner ul li,.talk_with_experts ul li{list-style:none; border-bottom:1px dotted #ccc; font-size:15px; background:url('/assets/tic.png') no-repeat -1px 10px; padding:10px 10px 5px 40px; }
 .hotlines .inner ul li span, .talk_with_experts ul li span{ display:inline-block; margin-left:0px;}
 .hotlines .inner ul li span.deg, .talk_with_experts ul li span.deg{ font-style:italic; font-size:12px;}
 .hotlines .inner ul li span.num, .talk_with_experts ul li span.num{ text-align:right; font-size:12px;}
@@ -148,10 +148,10 @@ nav.nav ul li a:hover > img{
 .stories .panel h3 span{ font-size:16px; color:#b3b3b1; display:inline-block; margin-left:10px; text-transform:none; padding-bottom:7px;}
 
 footer{
-    display:block; 
-    background:#696969; 
-    color:#fff; 
-    text-align:center; 
+    display:block;
+    background:#696969;
+    color:#fff;
+    text-align:center;
     padding:20px 0
 }
 .stories.forum{ background-color:#FDF7F4; width:700px; margin:0 auto; text-align:justify}
