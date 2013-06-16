@@ -1,10 +1,10 @@
 ul, li, h1, h2, h3, h4, h5, h6{ padding:0; margin:0}
-h2{ 
+h2{
     font-family:'Oswald';
-    text-transform:uppercase; 
-    border-bottom:2px solid #ccc; 
-    letter-spacing:1px; 
-    padding-bottom:5px; 
+    text-transform:uppercase;
+    border-bottom:2px solid #ccc;
+    letter-spacing:1px;
+    padding-bottom:5px;
     margin-bottom:5px;
     color:#C64564
 }
@@ -100,8 +100,8 @@ nav.nav ul li a.home img{ background:#F47722}
 
 nav.nav ul li a:hover > img{
     background:#ccc
-}   
-    
+}
+
 .mid{
     padding:40px 0;
     border-bottom: 1px dashed #ccc;
@@ -130,3 +130,7 @@ nav.nav ul li a:hover > img{
 .bottom{ background:#1AB1BB; padding:20px 40px}
 .talk_with_experts{ width:30%; min-height:200px; background:#f2f2f2; }
 .bottom .rat h2{ color:#fff; font-size:20px; display:block}
+#map_canvas{
+  width: 800px;
+  height: 400px;
+}
