@@ -1,25 +1,61 @@
-<h1>Listing articles</h1>
-
-<table>
-  <tr>
-    <th>Title</th>
-    <th>My story</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @articles.each do |article| %>
-  <tr>
-    <td><%= article.title %></td>
-    <td><%= article.my_story %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Article', new_article_path %>
+<!doctype html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<meta name="Description" content="merisathi" />
+<meta name="Keywords" content="merisathi" />
+<title>Sakhi</title>
+<link rel="stylesheet" type="text/css" href="css/merisathi.css">
+</head>
+<body>
+<div class="container">
+    
+    <div class="top">
+        <header>
+            <div class="logo floatL">
+                Merisathi
+            </div>
+            
+            <nav class="nav floatR">
+                <ul>
+                    <li><a href="#" class="signin"><img src="images/home.png" /><span class="text">Sign In</span></a></li>
+                    <li><a href="#" class="forum"><img src="images/home.png" /><span class="text">Forum</span></a></li>
+                    <li><a href="#" class="about"><img src="images/home.png" /><span class="text">About Us</span></a></li>
+                    <li><a href="#" class="home"><img src="images/home.png" /><span class="text">Home</span></a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </header>
+    </div>
+    
+    <section class="content">
+        <h2>Listing articles</h2>
+        
+        <table align="center">
+          <tr>
+            <th>Title</th>
+            <th>My story</th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        
+        <% @articles.each do |article| %>
+          <tr>
+            <td><%= article.title %></td>
+            <td><%= article.my_story %></td>
+            <td><%= link_to 'Show', article %></td>
+            <td><%= link_to 'Edit', edit_article_path(article) %></td>
+            <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+        </table>
+        
+        <br />
+        
+        <%= link_to 'New Article', new_article_path %>
+    </div>
+    
+</div>
+</body>
+</html>
